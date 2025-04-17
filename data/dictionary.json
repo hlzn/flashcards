@@ -1,0 +1,193 @@
+{
+    "data": [
+        {
+            "word": "Cama",
+            "translation": "Bett",
+            "article": "das",
+            "example": "Das Bett ist sehr bequem.",
+            "drawing": ""
+        },
+        {
+            "word": "Armario",
+            "translation": "Regal",
+            "article": "das",
+            "example": "Das Regal ist voll mit Büchern.",
+            "drawing": ""
+        },
+        {
+            "word": "Sofa",
+            "translation": "Sofa",
+            "article": "das",
+            "example": "Das Sofa ist im Wohnzimmer.",
+            "drawing": ""
+        },
+        {
+            "word": "Cuadro",
+            "translation": "Bild",
+            "article": "das",
+            "example": "Das Bild hängt an der Wand.",
+            "drawing": ""
+        },
+        {
+            "word": "Silla",
+            "translation": "Stuhl",
+            "article": "der",
+            "example": "Der Stuhl ist aus Holz.",
+            "drawing": ""
+        },
+        {
+            "word": "Closet",
+            "translation": "Schrank",
+            "article": "der",
+            "example": "Der Schrank ist sehr groß.",
+            "drawing": ""
+        },
+        {
+            "word": "Sillon",
+            "translation": "Sessel",
+            "article": "der",
+            "example": "Der Sessel ist sehr bequem.",
+            "drawing": ""
+        },
+        {
+            "word": "Tapete",
+            "translation": "Teppich",
+            "article": "der",
+            "example": "Der Teppich liegt auf dem Boden.",
+            "drawing": ""
+        },
+        {
+            "word": "Mesa",
+            "translation": "Tisch",
+            "article": "der",
+            "example": "Der Tisch ist aus Glas.",
+            "drawing": ""
+        },
+        {
+            "word": "Lampara",
+            "translation": "Lampe",
+            "article": "die",
+            "example": "Die Lampe ist sehr hell.",
+            "drawing": ""
+        },
+        {
+            "word": "verde",
+            "translation": "grün",
+            "article": "",
+            "example": "Das Gras ist grün.",
+            "drawing": ""
+        },
+        {
+            "word": "blanco",
+            "translation": "weiß",
+            "article": "",
+            "example": "Der Schnee ist weiß.",
+            "drawing": ""
+        },
+        {
+            "word": "negro",
+            "translation": "schwarz",
+            "article": "",
+            "example": "Die Nacht ist schwarz.",
+            "drawing": ""
+        },
+        {
+            "word": "rojo",
+            "translation": "rot",
+            "article": "",
+            "example": "Die Rose ist rot.",
+            "drawing": ""
+        },
+        {
+            "word": "rosa",
+            "translation": "lila",
+            "article": "",
+            "example": "Die Blume ist pink/lila.",
+            "drawing": ""
+        },
+        {
+            "word": "gris",
+            "translation": "grau",
+            "article": "",
+            "example": "Der Himmel ist grau.",
+            "drawing": ""
+        },
+        {
+            "word": "Celular",
+            "translation": "Handy",
+            "article": "das",
+            "example": "Das Handy liegt auf dem Tisch.",
+            "drawing": ""
+        },
+        {
+            "word": "Libro",
+            "translation": "Buch",
+            "article": "das",
+            "example": "Das Buch ist sehr spannend.",
+            "drawing": ""
+        },
+        {
+            "word": "Lápiz",
+            "translation": "Bleistift",
+            "article": "der",
+            "example": "Der Bleistift ist auf dem Schreibtisch.",
+            "drawing": ""
+        },
+        {
+            "word": "Pluma",
+            "translation": "Kugelschreiber",
+            "article": "der",
+            "example": "Der Kugelschreiber schreibt blau.",
+            "drawing": ""
+        },
+        {
+            "word": "Llave",
+            "translation": "Schlüssel",
+            "article": "der",
+            "example": "Der Schlüssel öffnet die Tür.",
+            "drawing": ""
+        },
+        {
+            "word": "Bolsa",
+            "translation": "Tasche",
+            "article": "die",
+            "example": "Die Tasche ist aus Leder.",
+            "drawing": ""
+        },
+        {
+            "word": "Reloj",
+            "translation": "die Uhr",
+            "article": "die",
+            "example": "Die Uhr zeigt die Zeit an.",
+            "drawing": ""
+        },
+        {
+            "word": "Lentes",
+            "translation": "Brille",
+            "article": "die",
+            "example": "Die Brille liegt auf dem Tisch.",
+            "drawing": ""
+        },
+        {
+            "word": "Camara",
+            "translation": "Kamera",
+            "article": "die",
+            "example": "Die Kamera macht schöne Fotos.",
+            "drawing": ""
+        },
+        {
+            "word": "Botella",
+            "translation": "Flasche",
+            "article": "die",
+            "example": "Die Flasche ist aus Glas.",
+            "drawing": ""
+        },
+        {
+            "word": "Collar",
+            "translation": "Kette",
+            "article": "die",
+            "example": "Die Kette ist aus Gold.",
+            "drawing": ""
+        }
+    ]
+}
