@@ -1,35 +1,38 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-import CollectionManager from './components/CollectionManager.vue'
-import Flashcards from './components/Flashcards.vue'
-
-const mode = ref<'manage' | 'flashcards'>('manage')
-</script>
-
 <template>
-  <div id="app">
-    <nav class="app-nav">
-      <button :class="{ active: mode === 'manage' }" @click="mode = 'manage'">Manage</button>
-      <button :class="{ active: mode === 'flashcards' }" @click="mode = 'flashcards'">Flashcards</button>
-    </nav>
-    <CollectionManager v-if="mode === 'manage'" />
-    <Flashcards v-else />
-  </div>
+  <ul class="horizontal-menu">
+    <li><router-link to="/regular-words">Regular Words</router-link></li>
+    <li><router-link to="/verbs">Verbs</router-link></li>
+  </ul>
+  <router-view />
 </template>
 
+<script setup lang="ts">
+  import { RouterLink } from 'vue-router';
+</script>
+
 <style scoped>
-.app-nav {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-.app-nav button {
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-}
-.app-nav button.active {
-  font-weight: bold;
-  border-bottom: 2px solid currentColor;
-}
+  .horizontal-menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .horizontal-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .horizontal-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  .horizontal-menu a.router-link-active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  } 
+
 </style>
