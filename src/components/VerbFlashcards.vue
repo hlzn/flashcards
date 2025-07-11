@@ -8,7 +8,7 @@
       :key="idx"
       class="card-container"
     >
-      <div :class="['card', { flipped: flipped[idx] }]">
+      <div :class="['card', { flipped: flipped[idx] }]" @click="turnBackUp(idx)">
         <div
           class="card-face front"
           :style="{ borderColor: colors[idx % colors.length] }"
@@ -48,7 +48,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useCollectionStore } from '../stores/verbcollection'
+import { useVerbCollectionStore } from '../stores/verbcollection'
 
 interface Entry {
   word: string
@@ -59,7 +59,7 @@ interface Entry {
   drawing: string
 }
 const strictMode = ref<boolean>(false) // Track strict mode state
-const store = useCollectionStore()
+const store = useVerbCollectionStore()
 onMounted(() => store.load())
 const entries = store.entries as Entry[]
 const flipped = ref<boolean[]>(entries.map(() => false))
@@ -74,7 +74,15 @@ function scramble() {
   entries.splice(0, entries.length, ...shuffledEntries)
   flipped.value = entries.map(() => false)
   guesses.value = entries.map(() => '')
+  pastGuesses.value = entries.map(() => '')
   wrong.value = entries.map(() => false)
+}
+
+function turnBackUp(index: number) {
+  if (!flipped.value[index]) return
+
+  flipped.value[index] = false
+  wrong.value[index] = false
 }
 
 function check(index: number) {
@@ -89,7 +97,6 @@ function check(index: number) {
     : ''
   if (guess === answer && pastGuess === pastAnswer) {
     flipped.value[index] = true
-    guesses.value[index] = ''
     wrong.value[index] = false
   } else {
     wrong.value[index] = true

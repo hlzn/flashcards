@@ -1,6 +1,6 @@
 <template>
   <div class="collection-manager">
-    <h2>Manage Flashcard Collection</h2>
+    <h2>Manage Verb Flashcard Collection</h2>
     <ul>
       <li v-for="(entry, index) in entries" :key="index">
         <span class="entry-row">
@@ -30,9 +30,9 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { useCollectionStore } from '../stores/verbcollection'
+import { useVerbCollectionStore } from '../stores/verbcollection'
 
-const store = useCollectionStore()
+const store = useVerbCollectionStore()
 let entries = store.entries;
 const showImporter = ref(false)
 const importText = ref('')

@@ -8,9 +8,9 @@ export interface FlashcardEntry {
   drawing?: string
 }
 
-const STORAGE_KEY = 'flashcards-collection'
+const STORAGE_KEY = 'verben-flashcards-collection'
 
-export const useCollectionStore = defineStore('collection', {
+export const useVerbCollectionStore = defineStore('verbcollection', {
   state: () => ({
     entries: [] as FlashcardEntry[],
   }),
@@ -42,6 +42,7 @@ export const useCollectionStore = defineStore('collection', {
     },
     flush() {
       this.entries = [];
+      localStorage.removeItem(STORAGE_KEY);
     }
   },
 })

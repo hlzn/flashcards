@@ -42,6 +42,7 @@ export const useCollectionStore = defineStore('collection', {
     },
     flush() {
       this.entries = [];
+      localStorage.removeItem(STORAGE_KEY);
     }
   },
 })
